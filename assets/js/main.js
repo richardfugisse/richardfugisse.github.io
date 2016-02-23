@@ -412,7 +412,7 @@
             else {
                 $.ajax({
                     type: 'POST',
-                    url: 'assets/php/contact.php',
+                    url: 'http://tulipia.com.br/richardfugisse/contact.php',
                     data: {
                         name: contactNameVal,
                         email: contactEmailVal,

@@ -208,7 +208,7 @@ textarea {
 
 .bg-home,
 .bg-home nav:before {
-    background-color: #FFEB3B;
+    background-color: #44F92E;
     color: #252525;
 }
 
@@ -218,7 +218,15 @@ textarea {
 .bg-home .btn-inverse{
     background-color: #252525;
     border-color: #252525;
-    color: #FFEB3B;
+    color: #44F92E;
+}
+.bg-about *:not(i):not(nav):after,
+.bg-about *:not(i):not(nav):before,
+.bg-about .btn:hover,
+.bg-about .btn-inverse{
+    background-color: #252525;
+    border-color: #252525;
+    color: #fff;
 }
 
 /* Subscribe */
@@ -242,7 +250,7 @@ textarea {
 
 .bg-about,
 .bg-about nav:before {
-    background-color: #F44336;
+    background-color: #404040;
     color: #ffffff;
 }
 
@@ -255,7 +263,7 @@ textarea {
 
 .bg-contact,
 .bg-contact nav:before {
-    background-color: #dedede;
+    background-color: #048EDE;
     color: #252525;
 }
 
