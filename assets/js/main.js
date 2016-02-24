@@ -19,7 +19,9 @@
         lazyLoad : true,
         navigation : true,
         navigationText: ["Anterior", "Pr&oacute;ximo"],
-        itemsScaleUp: true
+        itemsDesktop:   [1199,3],
+        itemsDesktopSmall:  [979,2],
+        itemsTablet: [768,2],
     });
     ///** Background Animation **/
 
