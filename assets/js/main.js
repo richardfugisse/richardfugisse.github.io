@@ -5,7 +5,7 @@
  * url: http://themeforest.net/user/awedoo
  */
 
-(function ($) {
+ (function ($) {
     "use strict";
 
     function awdMenu() {
@@ -14,7 +14,11 @@
             $("#awd-site-nav").toggleClass('active');
         });
     }
-    $("#owl-example").owlCarousel();
+    $("#owl-example").owlCarousel({
+        items : 4,
+        lazyLoad : true,
+        navigation : true
+    });
     ///** Background Animation **/
 
     var canvas = document.getElementById("awd-site-canvas");
@@ -83,8 +87,8 @@
                     x, y,
                     cp1xvx,cp1xvy,cp1yvx,cp1yvy,
                     cp2xvx,cp2xvy,cp2yvx,cp2yvy
-                )
-            );
+                    )
+                );
         }
     }
 
@@ -103,7 +107,7 @@
                 curves_array[i].cp1x, curves_array[i].cp1y,
                 curves_array[i].cp2x, curves_array[i].cp2y,
                 canvas.width + 100, curves_array[i].y - 100
-            );
+                );
             ctx.stroke();
 
             if (curves_array[i].cp1x < 0 || curves_array[i].cp1x > canvas.width) {
@@ -143,7 +147,7 @@
         $('.slide-item').first().addClass('active');
 
         var slide_timeout,
-            slide_in_timeout;
+        slide_in_timeout;
 
         var $bg = $('#bg');
         var $menu = $('#awd-site-nav');
@@ -275,7 +279,7 @@
                 + '<div class="counter-container"><div class="counter-date"><div class="counter-box first"><span>dia%!d</span><div class="number">%-D</div></div></div>'
                 + '<div class="counter-time"><div class="counter-box"><div class="number">%H:%M</div></div>'
                 + '<div class="counter-box last"><div class="number">%S</div><span>segundos</span></div></div></div>'
-            ));
+                ));
         });
     }
 
