@@ -17,7 +17,9 @@
     $("#owl-example").owlCarousel({
         items : 3,
         lazyLoad : true,
-        navigation : true
+        navigation : true,
+        navigationText: ["Anterior", "Pr&oacute;ximo"],
+        itemsScaleUp: true
     });
     ///** Background Animation **/
 
