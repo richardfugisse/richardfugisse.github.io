@@ -14,7 +14,7 @@
             $("#awd-site-nav").toggleClass('active');
         });
     }
-
+    $("#owl-example").owlCarousel();
     ///** Background Animation **/
 
     var canvas = document.getElementById("awd-site-canvas");
