@@ -211,6 +211,19 @@ textarea {
     background-color: #44F92E;
     color: #252525;
 }
+.bg-portfolio,
+.bg-portfolio nav:before {
+    background-color: #fff;
+    color: #252525;
+}
+.bg-portfolio *:not(i):not(nav):after,
+.bg-portfolio *:not(i):not(nav):before,
+.bg-portfolio .btn:hover,
+.bg-portfolio .btn-inverse{
+    background-color: #252525;
+    border-color: #252525;
+    color: #44F92E;
+}
 
 .bg-home *:not(i):not(nav):after,
 .bg-home *:not(i):not(nav):before,
@@ -250,7 +263,7 @@ textarea {
 
 .bg-about,
 .bg-about nav:before {
-    background-color: #404040;
+    background-color: #BB405E;
     color: #ffffff;
 }
 
@@ -1200,13 +1213,16 @@ textarea::-webkit-input-placeholder {
 /*====================================================
 13. Richard Style's
 ====================================================*/
+.logo{
+    width: 130px;
+}
 .owl-carousel figure {
     position: relative;
     z-index: 1;
     float: left;
     overflow: hidden;
-    width: 518px;
-    height: 406px;
+    // width: 518px;
+    // height: 406px;
     margin: 60px 30px 30px;
     background: #3085a3;
     text-align: center;
@@ -1223,12 +1239,11 @@ textarea::-webkit-input-placeholder {
 }
 .owl-carousel figure figcaption {
     padding: 2em;
-    color: #fff;
+    color: #252525;
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden
 }
-.owl-carousel figure a,
 .owl-carousel figure figcaption {
     position: absolute;
     top: 0;
@@ -1237,11 +1252,31 @@ textarea::-webkit-input-placeholder {
     height: 100%
 }
 .owl-carousel figure a {
-    z-index: 1000;
-    text-indent: 200%;
-    font-size: 0;
-    opacity: 0;
-    cursor: pointer
+ position: absolute;
+ right: 0;
+ width: 250px;
+ bottom: calc(50% - 50px);
+ left: 0;
+ font-size: 14px;
+ padding: 10px;
+ border: 2px solid #fff;
+ text-align: center;
+ background: transparent;
+ opacity: 0;
+ transition: opacity .35s, transform .35s;
+ -webkit-transform: translate3d(-40px, 0, 0);
+ transform: translate3d(-40px, 0, 0);
+ margin: auto;
+ background-color: #252525;
+ border-color: #252525;
+ color: #fff;
+ text-transform: uppercase;
+ font-weight: 600;
+ -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+     -ms-transition: all .25s;
+      -o-transition: all .25s;
+         transition: all .25s;
 }
 .owl-carousel figure h2 {
     word-spacing: -.15em;
@@ -1268,7 +1303,7 @@ figure.effect-sarah:hover p {
     transform: translate3d(0, 0, 0)
 }
 figure.effect-milo {
-    background: #4f6cc1
+    background: #02F338
 }
 figure.effect-milo img {
     width: -webkit-calc(100% + 60px);
@@ -1281,22 +1316,24 @@ figure.effect-milo img {
     backface-visibility: hidden
 }
 figure.effect-milo:hover img {
-    opacity: .5;
+    opacity: .3;
     -webkit-transform: translate3d(0, 0, 0)scale(1);
     transform: translate3d(0, 0, 0)scale(1)
 }
 figure.effect-milo h2 {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: calc(50% - 20px);
+    left: 0;
     padding: 1em 1.2em;
     opacity: 0;
     transition: opacity .35s, transform .35s;
     -webkit-transform: translate3d(-40px, 0, 0);
-    transform: translate3d(-40px, 0, 0)
+    transform: translate3d(-40px, 0, 0);
 }
 figure.effect-milo h2,
-figure.effect-milo p {
+figure.effect-milo p,
+figure.effect-milo a, {
     -webkit-transition: opacity .35s, -webkit-transform .35s
 }
 figure.effect-milo:hover h2 {
@@ -1314,16 +1351,20 @@ figure.effect-milo p {
     -webkit-transform: translate3d(-40px, 0, 0);
     transform: translate3d(-40px, 0, 0)
 }
-.swiper-container,
-.swiper-wrapper,
-.testimonios {
-    position: relative;
-    width: 100%
-}
 figure.effect-milo:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
+}
+figure.effect-milo:hover a {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+figure.effect-milo a:hover{
+    background-color: #fff;
+    border-color: #fff;
+    color: #252525;
 }
 /*====================================================
 14. Responsive
@@ -1550,7 +1591,7 @@ figure.effect-milo:hover p {
 
     #awd-site-content {
         top: 96px;
-        bottom: 0px;
+        // bottom: 0px;
     }
 
     .subscribe-form .form-notice {
@@ -1581,7 +1622,9 @@ figure.effect-milo:hover p {
 }
 
 @media only screen and (max-width: 480px) {
-
+    .logo{
+        width: 70px;
+    }
     /* Clock */
 
     #clock .counter-date {

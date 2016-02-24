@@ -17,11 +17,13 @@
     $("#owl-example").owlCarousel({
         items : 3,
         lazyLoad : true,
-        navigation : true,
+        navigation : false,
         navigationText: ["Anterior", "Pr&oacute;ximo"],
         itemsDesktop:   [1199,3],
         itemsDesktopSmall:  [979,2],
         itemsTablet: [768,2],
+        itemsScaleUp:true,
+        scrollPerPage: true
     });
     ///** Background Animation **/
 
