@@ -15,7 +15,7 @@
         });
     }
     $("#owl-example").owlCarousel({
-        items : 4,
+        items : 3,
         lazyLoad : true,
         navigation : true
     });
